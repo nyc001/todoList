@@ -3,7 +3,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 
 function Note(props) {
   function deleteNote() {
-    props.function(props.info.key);
+    props.function({ id: props.info._id });
   }
 
   return (
